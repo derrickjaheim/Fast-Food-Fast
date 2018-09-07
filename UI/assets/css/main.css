@@ -15,7 +15,7 @@ div.login-content{
 	z-index: 99;
 	width: 90%;
 	height: 80%;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(255, 69, 0, 0.7);
 	overflow: unset;
 }
 
@@ -49,7 +49,7 @@ div.form-wrap{
 
 div.form-wrap input#field{
 	border: none;
-	background-color: rgba(0, 0, 0, 0);
+	background-color:rgba(255, 69, 0, 0.7);
 	padding: 15px 0px 15px 5px;
 	/*color: #F9E79F;*/
 	border-bottom: 1px solid #F9E79F;
@@ -146,12 +146,14 @@ div.ans-content{
 	position: absolute;
 	top: 30%;
 	left: 10%;
-	background-color: #efefef;
+	background-color: rgba(255, 69, 0, 0.7);
 	z-index: 99;
 	width: 80%;
+	color: rgba(245, 255, 250, 0.8);
 	padding: 20px;
 	border: 1px solid silver;
 	margin-bottom: 30px;
+	font
 }
 
 div.question h1{
@@ -164,7 +166,7 @@ div.question p.label label{
 
 div.answers{
 	overflow: auto;
-	background-color: #FCF3CF;
+	background-color:rgba(255, 69, 0, 0.7);
 }
 
 div.answers a{
@@ -223,7 +225,7 @@ div.post button{
 	border-radius: 5px;
 	border: none;
 	color: gray;
-	background-color: #ABEBC6;	
+	background-color: rgba(255, 69, 0, 0.7);	
 }
 
 div.header{
@@ -231,7 +233,7 @@ div.header{
 	top: 0%;
 	left: 0%;
 	width: 100%;
-	background-color: rgba(0, 0, 0, .8);
+	background-color:rgba(255, 69, 0, 0.7);
 	z-index: 999;
 	padding: 10px 0px;
 }
@@ -266,7 +268,7 @@ div.header ul li button, div.header ul li button a, div.header ul li button a:ho
 	border-bottom-left-radius: 0px;
 	border: none;
 	color: gray;
-	background-color: #ABEBC6;
+	background-color: rgba(255, 69, 0, 0.7);
 	margin-left: 0px;
 	font-family: 'Flamenco', cursive;
 
