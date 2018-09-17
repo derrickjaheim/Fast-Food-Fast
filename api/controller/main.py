@@ -2,7 +2,7 @@
 from flask import jsonify, request
 from flask.views import MethodView
 
-from api.views import GetAllOrder
+from api.models.views import GetAllOrder
 
 
 class OrderNow(MethodView):

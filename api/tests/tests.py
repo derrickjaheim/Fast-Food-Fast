@@ -17,27 +17,27 @@ class TestViews(unittest.TestCase):
     methods defines test cases for get all orders
     """
 
-    def test_getallorders(self):
+    def test_get_all_orders(self):
         result = self.client().get('/api/v1/orders/')
         self.assertEqual(result.status_code, 200)
         self.assertTrue(result.json["message"])
 
     """
-    methods defines test cases for get a question
+    methods defines test cases for get an order
     """
 
-    def test_getanorder(self):
+    def test_get_an_order(self):
         result = self.client().get('/api/v1/orders/2')
         self.assertEqual(result.status_code, 301)
         # self.assertTrue(result.json["message"])
 
     """
-    methods defines test cases for post a question
+    methods defines test cases for post an order
     """
 
-    def test_postorder(self):
+    def test_post_order(self):
         result = self.client().post('/api/v1/orders/', content_type="application/json", data=json.dumps(
-            dict(user_name="natasha", order="what is boot camp", )))
+            dict(user_name="Lindsey", order="Burgers", )))
         self.assertEqual(result.status_code, 200)
         # self.assertTrue(result.json["orders"])
         # self.assertIn('order', str(result.data))

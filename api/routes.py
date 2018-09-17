@@ -1,7 +1,7 @@
 """
 Module decorates views to urls
 """
-from api.main import OrderNow
+from api.controller.main import OrderNow
 
 
 class GetUrls:

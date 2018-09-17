@@ -1,6 +1,5 @@
 
 """end points for the orders"""
-from api.order import Order
 from flask import request
 
 class GetAllOrder:
