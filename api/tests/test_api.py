@@ -1,7 +1,7 @@
 import unittest
 import json
 
-from api.run import APP
+from run import APP
 
 """
 Class for all gets and Post
