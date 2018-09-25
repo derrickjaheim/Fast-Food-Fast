@@ -32,7 +32,7 @@ class GetAllOrder:
         for order in GetAllOrder.orders:
             if order_id == order['counter']:
                 return order
-        return ({'order': 'order_item doesnot exist'})
+        return ({'order': 'order_item doesnot exist'}), 200
 
     def update_order(self, counter):
         if counter:

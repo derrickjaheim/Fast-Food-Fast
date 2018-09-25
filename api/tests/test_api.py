@@ -22,6 +22,11 @@ class TestViews(unittest.TestCase):
         self.assertEqual(result.status_code, 200)
         self.assertTrue(result.json["message"])
 
+    def test_no_orders(self):
+        result = self.client().get('/api/v1/orders/1/')
+        self.assertEqual(result.status_code, 200)
+        self.assertTrue(result.json["message"])
+
     """
     methods defines test cases for get an order
     """
@@ -29,7 +34,6 @@ class TestViews(unittest.TestCase):
     def test_get_an_order(self):
         result = self.client().get('/api/v1/orders/2')
         self.assertEqual(result.status_code, 301)
-        # self.assertTrue(result.json["message"])
 
     """
     methods defines test cases for post an order
@@ -39,6 +43,5 @@ class TestViews(unittest.TestCase):
         result = self.client().post('/api/v1/orders/', content_type="application/json", data=json.dumps(
             dict(user_name="Lindsey", order="Burgers", status="")))
         self.assertEqual(result.status_code, 200)
-        # self.assertTrue(result.json["orders"])
-        # self.assertIn('order', str(result.data))
+
 
