@@ -10,14 +10,14 @@ class GetAllOrder:
     def __init__(self):
         self.orders = []
 
+    counter = 0
+
     def post_order(self, user_name, order, status):
         """method for all post orders"""
 
-        size = [order for order in GetAllOrder.orders]
+        self.counter+=1
 
-        counter = len(size) + 1
-
-        order = {'counter': counter,'user_name': user_name, 'order': order, 'status': status}
+        order = {'counter': self.counter,'user_name': user_name, 'order': order, 'status': status}
         GetAllOrder.orders.append(order)
         return GetAllOrder.orders
 
