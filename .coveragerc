@@ -5,4 +5,4 @@ omit =
     */venv/*
     */home/travis/virtualenv/*
     */mymodule/tests/*
-    */api/tests/test_api/*
+    */api/tests/test_api.py/*
