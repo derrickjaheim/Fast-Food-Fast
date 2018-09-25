@@ -37,7 +37,7 @@ class TestViews(unittest.TestCase):
 
     def test_post_order(self):
         result = self.client().post('/api/v1/orders/', content_type="application/json", data=json.dumps(
-            dict(user_name="Lindsey", order="Burgers", )))
+            dict(user_name="Lindsey", order="Burgers", status="")))
         self.assertEqual(result.status_code, 200)
         # self.assertTrue(result.json["orders"])
         # self.assertIn('order', str(result.data))
