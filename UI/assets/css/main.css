@@ -1,3 +1,78 @@
+
+.h2 {
+
+ font-family: 'Flamenco', cursive;
+
+}
+.button {
+    background-color: #4; /* Green */
+    border: none;
+   color: #444;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	font-family: 'Flamenco', cursive;
+}
+
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+	transition: 0.4s;
+		font-family: 'Flamenco', cursive;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+	overflow: hidden;
+		font-family: 'Flamenco', cursive;
+}
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.panel {
+    padding: 0 18px;
+    background-color:white;
+	max-height: 10;
+	color: #000000;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+		font-family: 'Flamenco', cursive;
+}
+
 img.bg-img{
 	position: fixed;
 	top: 0px;
@@ -15,7 +90,7 @@ div.login-content{
 	z-index: 99;
 	width: 90%;
 	height: 80%;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(255, 69, 0, 0.7);
 	overflow: unset;
 }
 
@@ -47,15 +122,23 @@ div.form-wrap{
 	display: block;
 }
 
-div.form-wrap input#field{
+div.form-wrap input#field1{
 	border: none;
-	background-color: rgba(0, 0, 0, 0);
+	background-color:rgba(255, 69, 0, 0.7);
 	padding: 15px 0px 15px 5px;
 	/*color: #F9E79F;*/
 	border-bottom: 1px solid #F9E79F;
 	width: 100%;
 }
 
+div.form-wrap input#field2{
+	border: none;
+	background-color:rgba(255, 69, 0, 0.7);
+	padding: 15px 0px 15px 5px;
+	/*color: #F9E79F;*/
+	border-bottom: 1px solid #F9E79F;
+	width: 100%;
+}
 div.form-wrap input[type="checkbox"]{
 	margin-top: 15px;
 	border: none;
@@ -146,12 +229,14 @@ div.ans-content{
 	position: absolute;
 	top: 30%;
 	left: 10%;
-	background-color: #efefef;
+	background-color: rgba(255, 69, 0, 0.7);
 	z-index: 99;
 	width: 80%;
+	color: rgba(245, 255, 250, 0.8);
 	padding: 20px;
 	border: 1px solid silver;
 	margin-bottom: 30px;
+	font
 }
 
 div.question h1{
@@ -164,7 +249,7 @@ div.question p.label label{
 
 div.answers{
 	overflow: auto;
-	background-color: #FCF3CF;
+	background-color:rgba(255, 69, 0, 0.7);
 }
 
 div.answers a{
@@ -223,7 +308,7 @@ div.post button{
 	border-radius: 5px;
 	border: none;
 	color: gray;
-	background-color: #ABEBC6;	
+	background-color: rgba(255, 69, 0, 0.7);	
 }
 
 div.header{
@@ -231,7 +316,7 @@ div.header{
 	top: 0%;
 	left: 0%;
 	width: 100%;
-	background-color: rgba(0, 0, 0, .8);
+	background-color:rgba(255, 69, 0, 0.7);
 	z-index: 999;
 	padding: 10px 0px;
 }
@@ -266,7 +351,7 @@ div.header ul li button, div.header ul li button a, div.header ul li button a:ho
 	border-bottom-left-radius: 0px;
 	border: none;
 	color: gray;
-	background-color: #ABEBC6;
+	background-color: rgba(255, 69, 0, 0.7);
 	margin-left: 0px;
 	font-family: 'Flamenco', cursive;
 

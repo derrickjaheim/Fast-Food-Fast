@@ -1,41 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Orders</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
 </head>
 <body>
+	
+		
 	
 	<div class="header">
 		<ul>
 			<li><a href="post.html">Fast-Food-Fast</a></li>
 			<li class="home-tag"><a href="post.html">Orders</a></li>
 			<li class="logout-tag"><a href="your.html">Your Orders</a></li>
-			<li class="logout-tag"><a href="login.html">logout</a></li>
+			<li class="logout-tag"><a href="index.html">logout</a></li>
 		</ul>
 	</div>
 
 	<img class="ans-img" src="assets/images/ans3.jpg">
 	
 	<div class="ans-content">
-		<div class="post">
+		<div class="">
 			<h2>Make Orders</h2>
+
+
+
+
+
+				<button class="accordion">APPETIZERS</button>
+<div class="panel">
+ 	<form>
+		 <input type="checkbox" name="Food" value="Bike">Blackened Chicken Sandwich<br>
+		  <input type="checkbox" name="eat" value="Car"> Turkey Club Sandwich<br>
+			<input type="checkbox" name="vehicle2" value="Car">Angus Burger<br>
+				 <input type="checkbox" name="vehicle2" value="Car">Veggie Sandwich<br>
+				   <input type="checkbox" name="vehicle2" value="Car">Veal Parmesan Sandwich<br></br></br>
+
+					   
+			</form>
+</div> </br></br>
+
+			<button class="accordion">SANDWICHES & ENTREES</button>
+		<div class="panel">
 			<form>
-		 <input type="checkbox" name="vehicle1" value="Bike">Burgers<br>
- 		 <input type="checkbox" name="vehicle2" value="Car"> fries
+  			 <input type="checkbox" name="Food" value="Bike">Shrimp Sautéed With Macadamia Nuts In A Delicate Pina
+																Colada Reduction<br>
+			  <input type="checkbox" name="eat" value="Car"> Mushroom Ala Mode Stuffed With Ricotta Cheese, Spinach
+																& Champagne Cream Sauce<br>
+			<input type="checkbox" name="eat" value="Car">Mozzarella Caprese With Tomato And Open Fire Roasted
+																Pepper, Basil & Extra Virgin Olive Oil<br>
+				 <input type="checkbox" name="eat" value="Car">Vegetable Rolls Drizzled With Fresh Ginger Soy Sauce<br></br></br>
+				  </form>
+		</div> </br></br>
+
+
+			<button class="accordion">	MAIN COURSE SELECTION</button>
+			<div class="panel">
+		<form>	
+		<input type="checkbox" name="Food" value="Bike">Norwegian Salmon Grilled With Unique Wasabi Slaw<br>
+		  <input type="checkbox" name="eat" value="Car"> Filet Of Tilapia Marechiaros With Fresh Clams Served With
+																Pasta And Topped With Red Clam Sauce<br>
+			<input type="checkbox" name="eat" value="Car">Shrimp Stuffed With Lump Crabmeat Served Over Greens
+																In A Lobster Sauce<br>
+				 <input type="checkbox" name="eat" value="Car">Lamb Shank Cacciatore Style Served Over Fettuccini<br></form></br></br>
+		</div></br></br>
+
+
+		<script>
+					var acc = document.getElementsByClassName("accordion");
+					var i;
+
+					for (i = 0; i < acc.length; i++) {
+						acc[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var panel = this.nextElementSibling;
+							if (panel.style.display === "block") {
+								panel.style.display = "none";
+							} else {
+								panel.style.display = "block";
+							}
+						});
+					}
+		</script>
+							
+	<div class="button button1" >
+					<h2 >Number of orders</h2>
+				<form action="">
+		<select name="Orders">
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+			<option value="4">Four</option>
+		</select>
+		<br><br>
+	<button class="button button1">Place Order(s)</button>
 		</form>
-		<h2>Number of orders</h2>
-		<form action="">
-  <select name="Orders">
-    <option value="1">One</option>
-    <option value="2">Two</option>
-    <option value="3">Three</option>
-    <option value="4">Four</option>
-  </select>
-  <br><br>
-  <input type="submit">
-</form>
+	</div>
 		</div>
-		</div>
-</body>
+	</body>
 </html>
