@@ -1,4 +1,3 @@
-
 from flask import jsonify, request
 from flask.views import MethodView
 
@@ -23,9 +22,9 @@ class OrderNow(MethodView):
     def get(self, order_id):
         if order_id is None:
             if GetAllOrder.get_orders is True:
-                return jsonify({'message':'no order'})
-            return jsonify({'message': self.orders.get_orders(self)})
-        return jsonify({'message': GetAllOrder.get_one_order(order_id,order_id)})
+                return jsonify({'message':'no order available'})
+            return jsonify({'orders': self.orders.get_orders()})
+        return jsonify({'order': GetAllOrder.get_one_order(order_id,order_id)})
 
 
     def put(self, order_id=None):

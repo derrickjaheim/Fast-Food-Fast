@@ -20,12 +20,12 @@ class TestViews(unittest.TestCase):
     def test_get_all_orders(self):
         result = self.client().get('/api/v1/orders/')
         self.assertEqual(result.status_code, 200)
-        self.assertTrue(result.json["message"])
+        self.assertTrue(result.json["orders"])
 
     def test_no_orders(self):
         result = self.client().get('/api/v1/orders/1/')
         self.assertEqual(result.status_code, 200)
-        self.assertTrue(result.json["message"])
+        self.assertTrue(result.json["order"])
 
     """
     methods defines test cases for get an order

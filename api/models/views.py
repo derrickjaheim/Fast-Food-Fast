@@ -1,4 +1,3 @@
-
 """end points for the orders"""
 from flask import request
 from api.models.order import Order
