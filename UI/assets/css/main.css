@@ -122,7 +122,7 @@ div.form-wrap{
 	display: block;
 }
 
-div.form-wrap input#field{
+div.form-wrap input#field1{
 	border: none;
 	background-color:rgba(255, 69, 0, 0.7);
 	padding: 15px 0px 15px 5px;
@@ -131,6 +131,14 @@ div.form-wrap input#field{
 	width: 100%;
 }
 
+div.form-wrap input#field2{
+	border: none;
+	background-color:rgba(255, 69, 0, 0.7);
+	padding: 15px 0px 15px 5px;
+	/*color: #F9E79F;*/
+	border-bottom: 1px solid #F9E79F;
+	width: 100%;
+}
 div.form-wrap input[type="checkbox"]{
 	margin-top: 15px;
 	border: none;
